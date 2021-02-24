@@ -1,0 +1,439 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Rowdies&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+*:focus {
+    outline: none
+}
+
+body {
+    color: white;
+    overflow-x: hidden; 
+    background: black;
+}
+
+.navbar {
+    width: 100vw;
+    height: 60px;
+    padding: 0 60px;
+    display: flex;
+    align-items: center;
+    position: absolute;
+}
+
+.navbar h1 {
+    color: #ffc900;
+    font-family: 'Rowdies', cursive;
+    font-weight: lighter;
+    font-size: 1.5rem;
+    flex: 1;
+    position: absolute;
+    left: 60px;
+}
+
+.navbar h1 i {
+    display: none;
+}
+
+.navbar ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: absolute;
+    right: 60px;
+    list-style: none;
+}
+
+.navbar ul a {
+    text-decoration: none;
+    border: 1px solid black;
+    background: #8a877ccf;
+    color: black;
+    font-weight: 700;
+    padding: 5px 20px;
+    margin-left: 20px;
+    border-radius: 5px;
+}
+
+.navbar ul a:hover {
+    background: #ffc900;
+}
+
+.page-1 {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: center;
+    padding: 60px;
+    background: #080808;
+    overflow: hidden;
+    background-image: linear-gradient(45deg,#000, #0000), url(./images/pizza6.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+}
+.page-1 h1 {
+    font-size: 2rem;
+    color: #ffc900;
+}
+
+.page-1 p {
+    width: 50%;
+}
+
+.page-1 img {
+    position: absolute;
+    right: -206px;
+    top: 40%;
+    width: 50%;
+}
+
+.page-2{
+    width:100%;
+    height:auto;
+    position:relative;
+    background-color:rgb(8, 8, 8);
+    padding:100px 60px;
+    border-top: 1px solid #ffc900;
+    border-bottom: 1px solid #ffc900;
+}
+.page-2 .title-flavor{
+    font-size: 2.5rem;
+    color: #ffc900;
+    text-align:center;
+    padding-bottom:20px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.page-2 img {
+    height:150px;   
+    width:250px;
+}
+.page-2 .image{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+}
+.page-2 figure{
+    display:flex;
+    justify-content:center;
+    flex-direction:column;
+    align-items:center;
+    margin-top:20px;
+}
+.page-2 figcaption{
+    font-size:1rem;
+    height: 30px;
+    padding: 5px 20px;
+    font-family:'Open Sans', sans-serif;
+    border: 1px solid #ffc900;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ffc900;
+    font-weight: bold;
+    margin-top: 30px;
+}
+
+
+.page-3 {
+    display: grid;
+    width: 100vw;
+    height:100vh;
+    grid-template-areas: "order form";
+    background-image: linear-gradient(45deg, rgba(0,0,0,0.9), rgba(0,0,0,0.9)), url(./images/pizzaagain.webp);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    padding: 60px;
+}
+
+.page-3 .order {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    grid-area: order;
+    flex-direction: column;
+}
+
+.page-3 .order h1 {
+    font-size: 3.5rem;
+    line-height: 3rem;
+    color: #ffc900;
+}
+
+.page-3 .order h3 {
+    font-size: 2.5rem;
+}
+
+.page-3 .order p i {
+    width: 20px;
+    margin-right: 10px;
+}
+.page-3 .order i{
+    color:#ffc900;
+}
+.page-3 .form {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    grid-area: form;
+}
+
+.page-3 .form .form-layout {
+    display: grid;
+    grid-template-areas:
+    "name email"
+    "comment comment"
+    "submit submit";
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+}
+
+#name::placeholder, #email::placeholder, #comment::placeholder, #submit::placeholder {
+    color: gray;
+}
+
+#name {
+    grid-area: name;
+    height: 40px;
+    padding: 5px 10px;
+    background: #00000042;
+    border: 1px solid #ffc900;
+    color: white;
+}
+
+#email {
+    grid-area: email;
+    height: 40px;
+    padding: 5px 10px;
+    background: #00000042;
+    border: 1px solid #ffc900;
+    color: white;
+}
+/* /ulitin mo nGA ARKE WALA PA DIN SAKIN NARESTART KO NA VS CODE GANUN PA DIN */
+#comment {
+    grid-area: comment;
+    padding: 10px 10px;
+    background: #00000042;
+    border: 1px solid #ffc900;
+    color: white;
+}
+
+#submit {
+    grid-area: submit;
+    padding: 5px 10px;
+    height: 40px;
+    background: #ffc900;
+    border: 2px solid #ffc900;
+    color: black;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor:pointer;
+}
+
+.footer{
+    background-color:black;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:60px;
+    border-top: 1px solid #ffc900;
+}
+.footer-item h3{
+    color:#ffc900;
+}
+.footer-item span i {
+    width:20px;
+    margin-right:10px;
+}
+
+/* Media Query na kaagad tayoooooooom open mo chat mo dito gago */
+@media (min-width:900px){
+    /* .navbar{
+        width:100%;
+        background-color:red;
+    } */
+}
+
+@media (max-width:900px){
+
+    .navbar ul {
+        display:none;
+    }
+
+    .navbar {
+        padding: 0 20px;
+        width:100%;
+    }
+
+    .navbar .dropdown{
+        display: flex;
+        position: absolute;
+        flex-direction: column;
+        width:100%;
+        top: 4rem;
+        background: white;
+    }
+    
+    .dropdown a {
+        background: none;
+        border: none;
+    }
+
+    
+    .navbar h1{
+        display: flex;
+        font-size:1.5rem;
+        width: 100vw;
+        padding:0;
+        position: relative;
+        justify-content: space-between;
+        left: 0;
+    }
+    
+    .navbar h1 i {
+        right: 20px;
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+    }
+    .navbar .dropdown a {
+        border:none;
+        background: none;
+    }
+
+    .navbar .dropdown a li {
+        height: 100%;
+        padding:10px 20px ;
+    }
+
+    .page-1 {
+        background-image: linear-gradient(45deg,#000, #00000080), url(./images/pizza6.jpg);
+        padding: 60px 20px;
+    }
+
+    .page-1 .header{
+        font-size:1.8rem;
+        text-transform: uppercase;
+        /* text-shadow: 4px 3px 0px black; */
+    }
+    
+    .page-1 p {
+        text-align: justify;
+        width:100%;
+        /* text-shadow: 4px 3px 0px black; */
+    }
+
+    .page-2{
+        width:100%;
+        height:auto;
+        position:relative;
+        background-color:rgb(8, 8, 8);
+        padding:100px 20px;
+        border-top: 1px solid #ffc900;
+        border-bottom: 1px solid #ffc900;
+    }
+    
+    .page-2 .title-flavor{
+        font-size: 2.5rem;
+        color: #ffc900;
+        text-align: center;
+        font-family: 'Open Sans', sans-serif;
+    }
+    
+    .page-2 img {
+        height:100px;   
+        width:100px;
+    }
+    
+    .page-2 figure figcaption {
+        height: auto;
+        text-align: center;
+    }
+
+    .page-2 .image{
+        display:grid;
+        grid-template-columns:repeat(2,1fr);    
+        grid-template-areas:
+        "one two"
+        "three four";
+        grid-gap: 20px;
+    }
+    
+    
+    .page-2 #image1{grid-area:one;} 
+    .page-2 #image2{grid-area:two;} 
+    .page-2 #image3{grid-area:three;} 
+    .page-2 #image4{grid-area:four;} 
+
+    .page-3 {
+        grid-template-areas: 
+        "order" 
+        "form";
+        height: auto;
+        width: 100%;
+        padding: 60px 20px;
+    }
+    
+    .page-3 .order {
+        align-items: center;
+        padding-bottom: 60px;
+        grid-area: order;
+    }
+    
+    .page-3 .order h1 {
+        font-size: 2rem;
+        line-height: 2.1rem;
+        text-align: center;
+    }
+    
+    .page-3 .order h3 {
+        font-size: 1.8rem;
+    }
+
+    .page-3 .form {
+        justify-content: center;
+        grid-area: form;
+        width: 100%;
+    }
+    
+    #comment, #name, #email, #submit {
+        width: 100%;
+    }
+
+    .footer{
+        background-color:black;
+        display:flex;
+        flex-direction: column;
+        align-items:flex-start;
+        padding:60px 20px;
+        border-top: 1px solid #ffc900;
+    }
+    
+    .footer-item {
+        margin-bottom: 20px;
+    }
+
+    .footer-item h3{
+        color:#ffc900;
+    }
+
+    .footer-item span i {
+        width:20px;
+        margin-right:10px;
+    }
+
+}
+
+

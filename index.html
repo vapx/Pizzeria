@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./images/pizza.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+    <link rel="stylesheet" href="./style.css">
+    <script src="./anime-master/lib/anime.min.js"></script>
+    <title>PizzaEleven</title>
+</head>
+<body>
+    <div class="navbar">
+        <h1>PizzaEleven<i class="fas fa-bars"></i></h1>
+        
+        <ul>
+            <a href="#page1"><li>Home</li></a>
+            <a href="#page2"><li>Flavors</li></a>
+            <a href="#order"><li>Order</li></a>
+        </ul>
+    </div>
+    <div class="page-1" id="page1">
+        <h1 class="header">Welcome to PizzaEleven!</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor totam ex quos eveniet saepe sit quasi voluptatem nostrum voluptatum non, accusantium et iusto consequatur maiores expedita facere optio corporis nobis.</p>
+    </div>
+    <div class="page-2" id="page2">
+        <h1 class="title-flavor">FLAVORS</h1>
+        <div class="image">
+            <figure id="image1">
+                <img src="/images/pizza1.png" class="image1" alt="fuck">
+                <figcaption>Special Pizza</figcaption>
+            </figure>  
+            <figure id="image2"> 
+                <img src="/images/pizza2.png" class="image2" alt="fuck">
+                <figcaption>Pizza Combo</figcaption>
+            </figure>
+            <figure id="image3">
+                <img src="/images/pizza3.png" class="image3" alt="fuck">
+                <figcaption>Hawaiian Pizza</figcaption>
+            </figure>
+            <figure id="image4">
+                <img src="/images/pizza4.png" class="image4" alt="fuck">
+                <figcaption>Pepperoni Pizza</figcaption>
+            </figure>
+        </div>
+    </div>
+    <div class="page-3" id="order">
+        <div class="order">
+            <h1>FEELING HUNGRY?</h1>
+            <h3>ORDER NOW!</h3>
+            <p><i class="fas fa-phone"></i>#000-000-666</p>
+            <p><i class="fas fa-mobile"></i>09201023045</p>
+        </div>
+        <div class="form" id="form">
+            <div class="form-layout">
+                <input type="text" placeholder="Full Name" id="name">
+                <input type="email" placeholder="Email Address" id="email">
+                <textarea cols="30" rows="10" placeholder="TESTIMONIALS & SUGGESTION" id="comment"></textarea>
+                <input type="submit" value="Submit" id="submit">
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="footer-item"><h3>Developed by:</h3>
+            <span><i class="fas fa-code"></i>TEAM11 Web Solutions</span>
+        </div>
+
+        <div class="footer-item"><h3>Location:</h3>
+            <span><i class="fas fa-map-marker-alt"></i>100 New York Ave Cubao QC</span>
+        </div>
+
+        <div class="footer-item"><h3>Email:</h3>
+            <span><i class="fas fa-envelope"></i>team11@gmail.com</span>
+        </div>
+    </div>  
+    <script src="./myjs.js"></script>
+</body>
+</html>
